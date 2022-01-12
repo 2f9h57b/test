@@ -1,10 +1,5 @@
 <?php
 while(ob_get_level()>0) ob_get_clean();
-if (true && $_SERVER ['REMOTE_ADDR'] != '91.244.169.166' && $_SERVER ['REMOTE_ADDR'] != '77.93.127.66') {
-	header('HTTP/1.1 404 Not Found',true,404);
-	echo "Go From Here!!!"."(".$_SERVER ['REMOTE_ADDR'].")";
-	exit();
-}
 
 /*---CONFIG---*/
 $maskfiles=array('.php','.htm','.html','.tpl','.txt','.inc','.js'); //файлы, включающие эти слова идут в поиск
